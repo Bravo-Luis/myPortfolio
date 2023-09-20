@@ -1,5 +1,5 @@
 import './Header.css'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import Button from '@mui/material/Button';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import Typography from '@mui/material/Typography';
