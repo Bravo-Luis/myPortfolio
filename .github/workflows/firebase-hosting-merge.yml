@@ -11,9 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: yarn install && npm run build
+      - run: cd portfolio && npm install && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
+          entryPoint: 'portfolio'
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_PORTFOLIO_D5FCF }}'
           channelId: live
