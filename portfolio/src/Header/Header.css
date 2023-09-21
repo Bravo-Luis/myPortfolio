@@ -10,7 +10,6 @@
 }
 
 .header-name{
-    color: #d7d5c4;
     font-size: 10rem;
 }
 
@@ -32,12 +31,3 @@
     z-index: 1;
 }
 
-.header-menu{
-    position: fixed;
-    top: 0vh;
-    width: 98vw;
-    display: none;
-    flex-direction: row;
-    justify-content: right;
-    margin-right: 2vw;
-}

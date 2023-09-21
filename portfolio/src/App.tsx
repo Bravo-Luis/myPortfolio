@@ -72,6 +72,7 @@ function App() {
             fontWeight: 500,
             fontSize: "10rem",
             lineHeight: '10rem',
+            color: '#d7d5c4',
             [defaultTheme.breakpoints.down('md')]: {
                 fontSize: "6rem",
                 lineHeight: '6rem',
@@ -144,8 +145,8 @@ function App() {
                 {drawerList()}
             </SwipeableDrawer>
       </div>
-      <Header />
-      <About />
+      {selected === 'Home' && <Header />}
+      {selected === 'About' && <About />}
     </ThemeProvider>
   )
 }

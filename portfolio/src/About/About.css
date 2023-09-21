@@ -1,6 +1,17 @@
 .About{
-    height: 100vh;
+    min-height: 90vh;
     width: 100vw;
     position: relative;
-    display: none;
+    top: 10vh;
+    overflow: scroll;
+}
+
+.skill-logo{
+    scale: 1;
+    transition: scale 0.5s;
+    margin: 5px;
+}
+
+.skill-logo:hover{
+    scale: 1.1;
 }
