@@ -6,13 +6,11 @@ import {
   Grid,
   IconButton,
   Tooltip,
-  Box,
   Collapse,
-  Chip,
 } from "@mui/material";
-import InfoIcon from "@mui/icons-material/Info";
+
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import React, { useState } from "react";
+import  { useState } from "react";
 
 function About() {
   const [expanded, setExpanded] = useState(false);
