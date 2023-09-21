@@ -4,4 +4,59 @@
 
 body{
   background-color: rgb(21, 21, 21);
+  margin: 0;
 }
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.button-container{
+  position: fixed;
+  top: 2vh;
+  width: 98vw;
+  gap: min(2vw, 10px);
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin-right: 2vw;
+  align-items: center;
+  z-index: 999;
+}
+
+#hamburger{
+  position: relative;
+  top: 2.5vh;
+  width: 5vh;
+  height: 10vw;
+  right: 2vw;
+}
+
+.header-menu-item{
+  padding: 20px;
+  font-size: 1.5rem;
+  background: rgb(21, 21, 21);
+  color: #d7d5c4;
+}
+
+.header-menu{
+  position: fixed;
+  top: 0vh;
+  width: 98vw;
+  display: none;
+  flex-direction: row;
+  justify-content: right;
+  margin-right: 2vw;
+  z-index: 999;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-buttons{
+   display: none !important;
+  }
+  .header-menu{
+      display: flex !important;
+  }
+}
+
+

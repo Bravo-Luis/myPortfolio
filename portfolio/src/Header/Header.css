@@ -5,20 +5,16 @@
     height: 100vh;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 1;
 }
 
 .header-name{
-    position: absolute;
-    bottom: 45vh;
     color: #d7d5c4;
     font-size: 10rem;
 }
-    
-
 
 .header-jobtitle{
-    position: absolute;
-    bottom: 35vh;
     font-size: 5rem;
     text-shadow:
         -1px -1px 0 #d7d5c4, 
@@ -27,17 +23,15 @@
         1px 1px 0 #d7d5c4;  
 }
 
-.button-container{
-    position: fixed;
-    top: 2vh;
-    width: 98vw;
-    gap: min(2vw, 10px);
+.header-content{
     display: flex;
-    flex-direction: row;
-    justify-content: right;
-    margin-right: 2vw;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    row-gap: min(5vh, 2px);
+    z-index: 1;
 }
+
 .header-menu{
     position: fixed;
     top: 0vh;
@@ -46,25 +40,4 @@
     flex-direction: row;
     justify-content: right;
     margin-right: 2vw;
-}
-
-#hamburger{
-    font-size: 3rem;
-}
-
-.header-menu-item{
-    padding: 20px;
-    font-size: 1.5rem;
-    background: rgb(21, 21, 21);
-    color: #d7d5c4;
-}
-
-
-@media screen and (max-width: 768px) {
-    .button-container{
-        display: none;
-    }
-    .header-menu{
-        display: flex;
-    }
 }
