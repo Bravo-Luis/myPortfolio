@@ -9,11 +9,18 @@ import {
   Collapse,
   Chip, 
   Button,
-  Popover
+  Popover,
+  Box
 } from "@mui/material";
-
+import Resume from "./August2023.pdf"
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import  { useState, useEffect } from "react";
+
+import { Document } from 'react-pdf';
+
+import { Page, pdfjs } from 'react-pdf';
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+
 
 function About() {
   const [expanded, setExpanded] = useState(false);
@@ -56,6 +63,7 @@ function About() {
   const id = open ? 'simple-popover' : undefined;
 
 
+
   return (
     <div className="About">
 
@@ -72,19 +80,14 @@ function About() {
         vertical: 'center',
         horizontal: 'center',
     }}
-
 >
-<iframe 
-src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://drive.google.com/uc?id=1JOU1h8NBY7mQ7KlJC1UdhqdKVgo79ugO"
-className="resume-iframe"
-  title="Resume PDF"
-  frameBorder='0'
-></iframe>
-
-
-
-
+    <Box className="pdf-viewer">
+        <Document file={Resume}>
+            <Page pageNumber={1} />
+        </Document>
+    </Box>
 </Popover>
+
 
 {!isBelow1439 && <Grid container  justifyContent="center" >
         <div className="grid-column">
