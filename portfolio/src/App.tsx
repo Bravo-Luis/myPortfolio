@@ -121,7 +121,12 @@ function App() {
   const buttonList = () => (
     buttonNameList.map((buttonName, index) => {
       return (
-        <Button className='nav-buttons' key={index} variant={buttonName === selected ? "contained" : "outlined"} onClick={()=>{handleClick(buttonName)}}> {buttonName} </Button>
+        <Button className='nav-buttons' key={index} variant={buttonName === selected ? "contained" : "outlined"} onClick={()=>{handleClick(buttonName)}}
+        style={{
+          background: buttonName === selected ? '#d7d5c4' : 'rgb(21, 21, 21)',
+          color: buttonName === selected ? ' rgb(21, 21, 21)' : '#d7d5c4',
+        }}
+        > {buttonName} </Button>
       )
     }
   ))

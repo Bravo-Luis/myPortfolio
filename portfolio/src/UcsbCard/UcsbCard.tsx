@@ -1,10 +1,26 @@
 import './ucsbCard.css'
 
 import { Card } from '@mui/material'
+import {Tilt} from 'react-tilt';
 
 function UcsbCard(){
+
+    const defaultOptions = {
+        reverse:        false,  
+        max:            35,     
+        perspective:    1000,   
+        scale:          1.01,  
+        speed:          3000,   
+        transition:     true,   
+        axis:           null,   
+        reset:          true,   
+        easing:         "cubic-bezier(.03,.98,.52,.99)",    
+    }
+
     return(
-        <Card
+        <Tilt className="Tilt tilt-card" options={defaultOptions}>
+            <Card
+        className='ucsb-card'
   variant="outlined"
   style={{ background: "rgb(21, 21, 21)" }}
   sx={{
@@ -22,7 +38,11 @@ function UcsbCard(){
          height: "100%"
        }}
   />
+  <div className="shimmer"></div>
 </Card>
+        </Tilt>
+     
+        
     )
 }
 

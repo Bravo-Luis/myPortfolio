@@ -11,9 +11,15 @@ function ColumnGrid({ columns = [] }: { columns: JSX.Element[][] }) {
             {
                 columns.map((column, index) => {
                     return(
-                        <Grid item  className="column-grid-item" key={index}>
-                            {column}
-                        </Grid>
+                        <div  className="column-grid-item" key={index}>
+                            {column.map((item, index) => {
+                                return(
+                                    <div key={index} className="column-grid-item">
+                                        {item}
+                                    </div>
+                                )
+                            })}
+                        </div>
                     )
                 })
             }

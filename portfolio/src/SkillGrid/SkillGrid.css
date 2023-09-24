@@ -3,6 +3,7 @@
     scale: 1;
     transition: scale 0.5s;
     margin: 5px;
+    padding: 5px;
 }
 
 .skill-logo:hover{

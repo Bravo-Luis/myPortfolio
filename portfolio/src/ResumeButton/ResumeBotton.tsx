@@ -66,7 +66,7 @@ function ResumeButton(){
 >
     <Button  aria-describedby={id} variant="contained" style={{ display:'flex',width: "100%", height: "100%", textAlign: "center", justifyContent:"center", padding: 0, margin: 0, alignContent:"center" }} onClick={handleClick}>
         <Typography className="outlined-text" variant="h2"  color="rgb(21, 21, 21)" style={{ display:'flex',width: "100%", textAlign: "center", height: "100%", margin: 0, justifyContent:"center", alignItems:"center" }}>
-            Resume
+            ResumÉ
         </Typography>
     </Button>
 </Card>

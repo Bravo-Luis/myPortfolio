@@ -1,20 +1,21 @@
 import './RelevantCoursework.css'
 
-import { Card, Chip, Grid } from '@mui/material'
+import { Card, Chip, Grid, Typography } from '@mui/material'
 
 function RelevantCoursework(){
     return (
         <Card
               variant="outlined"
-              style={{ background: "rgb(21, 21, 21)" }}
+              style={{ background: "#49225c" }}
               sx={{
-                height: 260,
+                height: 290,
                 width: 350,
                 margin: "16px",
                 borderColor: "#d7d5c4",
                 padding: "16px",
               }}
             >
+                <Typography className="coursework-title" variant='body1' color='primary'> Relevant Coursework </Typography>
               <Grid>
                 {[
                   "Linear Algebra",
@@ -34,6 +35,7 @@ function RelevantCoursework(){
                 ].map((skill, index) => {
                   return (
                     <Chip
+                    className='skill-chip'
                       key={index}
                       label={skill}
                       color="primary"

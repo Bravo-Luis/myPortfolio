@@ -23,6 +23,7 @@ body{
   margin-right: 2vw;
   align-items: center;
   z-index: 999;
+  pointer-events: none;
 }
 
 #hamburger{
@@ -38,6 +39,10 @@ body{
   font-size: 1.5rem;
   background: rgb(21, 21, 21);
   color: #d7d5c4;
+}
+
+.nav-buttons{
+  pointer-events: all !important;
 }
 
 .header-menu{

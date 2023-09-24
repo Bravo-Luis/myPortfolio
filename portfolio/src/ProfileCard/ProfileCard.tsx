@@ -12,6 +12,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { useState } from 'react';
 
 
+
   const elevatorPitch = `
   
    Luis Bravo is passionate about technology, research, and collaborative spaces. He 
@@ -29,16 +30,21 @@ function ProfileCard(){
         setExpanded(!expanded);
     };
 
+
     return (
         <Card
+            className='profile-card'
           variant="outlined"
-          style={{ background: "rgb(21, 21, 21)" }}
+          style={{
+            overflow: "hidden"
+          }}
           sx={{
             maxHeight: 800,
             width: 350,
             margin: "16px",
             padding: "16px",
             borderColor: "#d7d5c4",
+            background: "rgb(21, 21, 21);",
           }}
         >
           <CardContent
@@ -46,15 +52,16 @@ function ProfileCard(){
               display: "flex",
               flexDirection: "column",
               alignItems: "stretch",
-              paddingBottom: 0,
+              paddingBottom: 0
             }}
           >
+            
             <div
               style={{
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-between",
-                alignItems: "center",
+                alignItems: "center"
               }}
             >
               <div>
