@@ -1,4 +1,4 @@
-import './ucsbCard.css'
+import './UcsbCard.css'
 
 import { Card } from '@mui/material'
 import {Tilt} from 'react-tilt';
