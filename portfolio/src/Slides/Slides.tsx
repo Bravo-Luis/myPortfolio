@@ -2,12 +2,12 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import { Card } from "@mui/material";
 import './Slides.css'
-import luna1 from './luna.jpeg'
-import luna2 from './luna2.jpg'
-import luna3 from './luna3.jpeg'
-import jacko1 from './jacko.jpg'
-import jacko2 from './jacko2.jpeg'
-import jacko3 from './jacko3.jpeg'
+import luna1 from './luna.webp'
+import luna2 from './luna2.webp'
+import luna3 from './luna3.webp'
+import jacko1 from './jacko.webp'
+import jacko2 from './jacko2.webp'
+import jacko3 from './jacko3.webp'
 
 function Slides() {
 
