@@ -2,6 +2,7 @@ import './App.css'
 
 import Header from './Header/Header'
 import About from './About/About';
+import Experience from './Experience/Experience';
 import { ThemeProvider } from '@mui/material/styles';
 import { createTheme } from '@mui/material/styles';
 import { useState } from 'react'
@@ -152,6 +153,7 @@ function App() {
       </div>
       {selected === 'Home' && <Header />}
       {selected === 'About' && <About />}
+      {selected === 'Experience' && <Experience />}
     </ThemeProvider>
   )
 }

@@ -35,7 +35,7 @@ function About() {
   const largerScreens = [
     [<ProfileCard />, <Slides />],
     [<UcsbCard />, <SkillGrid />],
-    [<ResumeButton />, <SocialGrid />,  <RelevantCoursework />],
+    [<ColumnGrid  columns={[[<ResumeButton/>, <SocialGrid />]]} />,  <RelevantCoursework />],
   ];
 
   const mediumScreens = [

@@ -24,7 +24,7 @@
     rotate: 45deg;
     scale: 2;
     background-size: 200% 100%;
-    animation: shimmer 3s linear infinite ; 
+    animation: shimmer 2.5s linear infinite ; 
     opacity: 0.0;
     transition: all 1s;
 }
