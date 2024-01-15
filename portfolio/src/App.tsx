@@ -1,7 +1,6 @@
 import './App.css'
 
-import Header from './Header/Header'
-import About from './About/About';
+import Home from './Home/Home'
 import Experience from './Experience/Experience';
 import { ThemeProvider } from '@mui/material/styles';
 import { createTheme } from '@mui/material/styles';
@@ -16,7 +15,6 @@ function App() {
 
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [selected, setSelected] = useState<string>('Home');
-
 
   const toggleDrawer = (open: boolean) => (event: React.KeyboardEvent | React.MouseEvent) => {
       if (
@@ -35,7 +33,7 @@ function App() {
       }
     };
 
-  const buttonNameList = ['Home', 'About', 'Experience', 'Projects']
+  const buttonNameList = ['Home', 'Experience', 'Projects', 'Coursework', 'Contact']
 
   const drawerList = () => (
       <div
@@ -134,8 +132,7 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <div className='button-container'>
-
+      <div className={"button-container"}>
                 {buttonList()}
             </div>
             <div className="header-menu">
@@ -151,9 +148,8 @@ function App() {
                 {drawerList()}
             </SwipeableDrawer>
       </div>
-      {selected === 'Home' && <Header />}
-      {selected === 'About' && <About />}
-      {selected === 'Experience' && <Experience />}
+      { selected === 'Home' && <Home/> }
+      { selected === 'Experience' && <Experience/> }
     </ThemeProvider>
   )
 }

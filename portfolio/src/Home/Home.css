@@ -1,19 +1,19 @@
 
-.header{
+.home{
     display: flex;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     justify-content: center;
     align-items: center;
     position: relative;
     z-index: 1;
 }
 
-.header-name{
+.home-name{
     font-size: 10rem;
 }
 
-.header-jobtitle{
+.home-jobtitle{
     font-size: 5rem;
     text-shadow:
         -1px -1px 0 #d7d5c4, 
@@ -22,7 +22,7 @@
         1px 1px 0 #d7d5c4;  
 }
 
-.header-content{
+.home-content{
     display: flex;
     flex-direction: column;
     justify-content: center;

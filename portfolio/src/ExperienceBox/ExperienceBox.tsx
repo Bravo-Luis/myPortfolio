@@ -3,7 +3,7 @@ import './ExperienceBox.css'
 import { Box } from '@mui/material'
 import { Typography } from '@mui/material'
 
-function ExperienceBox({title, jobTitle, dates, bgColor} : {title: string, jobTitle: string,  dates: string, bgColor : string}){
+function ExperienceBox({title, jobTitle, dates, bgColor, id} : {title: string, jobTitle: string,  dates: string, bgColor : string, id: string}){
 
     function generateComplementaryColor(color : String, tl : number) {
         const r = parseInt(color.substring(1, 2), 16) / 255;
@@ -43,11 +43,12 @@ function ExperienceBox({title, jobTitle, dates, bgColor} : {title: string, jobTi
         }
 
     return (
-        <Box className='experience-box' sx={{
+
+        <Box id={id} className='experience-box' sx={{
             background: bgColor,
             minHeight: '300px',
-            height: '40vh',
-            width: '95vw',
+            height: '300px',
+            width: 'clamp(300px, 80vw, 800px)',
             padding: '1.5rem',
             borderRadius: '1rem',
         }}

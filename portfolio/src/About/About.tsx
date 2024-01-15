@@ -7,7 +7,6 @@ import ProfileCard from "../ProfileCard/ProfileCard";
 import ResumeButton from "../ResumeButton/ResumeBotton";
 import SkillGrid from "../SkillGrid/SkillGrid";
 import SocialGrid from "../SocialGrid/SocialGrid";
-import RelevantCoursework from "../RelevantCoursework/RelevantCoursework";
 import ColumnGrid from "../ColumnGrid/ColumnGrid";
 import Slides from "../Slides/Slides";
 
@@ -35,12 +34,12 @@ function About() {
   const largerScreens = [
     [<ProfileCard />, <Slides />],
     [<UcsbCard />, <SkillGrid />],
-    [<ColumnGrid  columns={[[<ResumeButton/>, <SocialGrid />]]} />,  <RelevantCoursework />],
+    [<ColumnGrid  columns={[[<ResumeButton/>, <SocialGrid />]]} />],
   ];
 
   const mediumScreens = [
     [<ProfileCard />, <Slides/>, <ResumeButton />],
-    [<SocialGrid />,<UcsbCard />, <SkillGrid />, <RelevantCoursework />],
+    [<SocialGrid />,<UcsbCard />, <SkillGrid />],
   ];
 
   return (

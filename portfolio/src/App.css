@@ -24,6 +24,24 @@ body{
   align-items: center;
   z-index: 999;
   pointer-events: none;
+  transition: flex-direction 0.3s ease, margin-right 0.3s ease, align-items 0.3s ease;
+
+}
+
+.button-container-scrolled {
+  position: fixed;
+  top: 2vh;
+  width: 98vw;
+  gap: min(2vw, 10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  margin-right: 1vw;
+  align-items: flex-end;
+  z-index: 999;
+  pointer-events: none;
+  transition: flex-direction 0.3s ease, margin-right 0.3s ease, align-items 0.3s ease;
+
 }
 
 #hamburger{
@@ -43,6 +61,8 @@ body{
 
 .nav-buttons{
   pointer-events: all !important;
+  max-width: 150px;
+  transition: flex-direction 0.3s ease, margin-right 0.3s ease, align-items 0.3s ease;
 }
 
 .header-menu{
